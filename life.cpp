@@ -39,14 +39,7 @@ int main(int argc, char *argv[])
 		int iteration = 0;
 		do
 		{
-			if(stability(priorSnapshotBoard, snapshotBoard, boardSize) == true)
-			{
-				cout << "Stability reached." << endl;
-				return 0;
-			}
 			iteration++;
-			// need it to lag 2 ticks, not 1
-			//copySnapshotBoard(priorSnapshotBoard, snapshotBoard, boardSize);
 			tick(liveBoard, snapshotBoard, boardSize);
 			copySnapshotBoard(liveBoard, snapshotBoard, boardSize);
 			cout << "Board after " << iteration << " iterations:" << endl;
@@ -74,11 +67,11 @@ int main(int argc, char *argv[])
 		{
 			iteration++;
 			tick(liveBoard, snapshotBoard, boardSize);
+			copySnapshotBoard(liveBoard, snapshotBoard, boardSize);
 			cout << "Board after " << iteration << " iterations:" << endl;
 			printLiveBoard(liveBoard, boardSize);
-			copySnapshotBoard(liveBoard, snapshotBoard, boardSize);
 			cin.ignore();
-			system("CLS");
+			system("clear");
 		} while(iteration < 10000);
 	}
 	else
