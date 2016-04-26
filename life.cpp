@@ -12,7 +12,7 @@ Description:	Small program that replicates Conway's Game of Life:
 #include <cstdlib>      // atoi() and rand()
 #include <time.h>       // for intitial rand() seed
 
-// compile with: g++ life.cpp -std=gnu++0x
+// compile with: g++ -o life life.cpp -std=gnu++0x
 
 using namespace std;
 
