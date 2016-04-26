@@ -1,0 +1,2 @@
+1.	Figure out how to add a pause between output to automate iterations.
+2.	Figure out how to check for stability once end patterns emerge.
