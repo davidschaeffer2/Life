@@ -1,3 +1,11 @@
+/**************************************************************************************************
+Author:		David Schaeffer
+Date: 		April 26, 2016
+Filename:	life.cpp
+Description:	Small program that replicates Conway's Game of Life:
+		https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+**************************************************************************************************/
+
 #include <iostream>
 #include <vector>
 #include <fstream>
